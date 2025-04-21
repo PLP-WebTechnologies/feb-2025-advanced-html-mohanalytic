@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced HTML5 Elements and Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f8f8;
+    }
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 400px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>My Top 5 Favorite Things</h2>
+    <ol type="I">
+      <li>Reading Books</li>
+      <li>Travelling</li>
+      <li>Cooking</li>
+      <li>Watching Documentaries</li>
+      <li>Learning New Languages</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Nature Image</h2>
+    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Beautiful nature" width="600">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jane Doe</td>
+          <td>Nairobi, Kenya</td>
+          <td>+254712345678</td>
+          <td>jane.doe@email.com</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>Mombasa, Kenya</td>
+          <td>+254798765432</td>
+          <td>john.smith@email.com</td>
+        </tr>
+        <tr>
+          <td>Mary Anne</td>
+          <td>Kisumu, Kenya</td>
+          <td>+254734567890</td>
+          <td>mary.anne@email.com</td>
+        </tr>
+        <tr>
+          <td>Brian Oduor</td>
+          <td>Nakuru, Kenya</td>
+          <td>+254701112233</td>
+          <td>brian.oduor@email.com</td>
+        </tr>
+        <tr>
+          <td>Faith Kiptoo</td>
+          <td>Eldoret, Kenya</td>
+          <td>+254722334455</td>
+          <td>faith.kiptoo@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Choose a password" minlength="6" required>
+
+      <!-- Date -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select your country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="rwanda">Rwanda</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <!-- Checkboxes -->
+      <label>Interests:</label>
+      <input type="checkbox" id="sports" name="interests" value="sports">
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="interests" value="music">
+      <label for="music">Music</label>
+      <input type="checkbox" id="travel" name="interests" value="travel">
+      <label for="travel">Travel</label>
+
+      <!-- Submit Button -->
+      <br><br>
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <!-- Optional: Multimedia Example -->
+  <section>
+    <h2>Multimedia</h2>
+    <p>Listen to this audio:</p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Watch this video:</p>
+    <video width="600" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+</body>
+</html>
+
+
+
+
+
+
